@@ -1,0 +1,120 @@
+/*This is creating the grid of the webpage.*/
+.container{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 190px 1fr 100px;
+    grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "footer footer";
+}
+/*This is styling the webpage*/
+div { 
+       background-color: white;
+       border: 2px solid black;
+       padding: 10px;
+       color: black;
+}
+
+/*This contains the four sections*/
+.header{
+    grid-area: header;
+    text-align:center;
+}
+
+.sidebar{
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.content{
+    grid-area: content;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+/*This will contain the other sections - introduction, skills, and etc*/
+
+/* This is the education_experience section */
+.education_experience{
+    font-size: 15px;
+    margin: 10px;
+    color: black;
+    padding: 20px;
+}
+#summary{
+  color: red;
+}
+
+/* This is the skills section */
+.skills > ul > li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 13px;
+}
+
+/* Project showcase section */
+.showcase{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas: 
+     "title title"
+     "subtitle subtitle"
+     "projects projects"
+     "image description"
+     "image description"; 
+    gap:20px; 
+    padding:20px
+}
+
+.showcase > h1{
+    grid-area: title;
+}
+
+.showcase-subtitle{
+    grid-area: subtitle;
+}
+
+.showcase-projects{
+    grid-area: projects;
+}
+
+.showcase-images{
+    grid-area: image;
+}
+
+.showcase-description {
+    grid-area: description;
+}
+
+/* Footer: contact information */
+  .contact-info{
+    position: relative;
+    left: 5px;
+    top:15px;
+}
+
+/* Resume */
+.resume{
+   background-color: aliceblue;
+}
+.button{
+   position: absolute;
+   top: 440px;
+   left: 75px;
+   background-color: rgb(232, 244, 66);
+   padding: 15px;
+   border-radius: 10px;
+}
+.button:hover{
+    font-style: italic;
+}
