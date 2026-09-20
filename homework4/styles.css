@@ -1,0 +1,267 @@
+/*This is creating the grid of the webpage.*/
+.container{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 190px 1fr 100px;
+    grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "footer footer";
+}
+/*This is styling the webpage*/
+div { 
+       background-color: white;
+       border: 2px solid black;
+       padding: 10px;
+       color: black;
+}
+
+/*This contains the four sections*/
+.header{
+    grid-area: header;
+    text-align:center;
+    
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    
+}
+
+.sidebar{
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.content{
+    grid-area: content;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+/*This will contain the other sections - introduction, skills, and etc*/
+
+/* This is the education_experience section */
+.education_experience{
+    font-size: 15px;
+    margin: 10px;
+    color: black;
+    padding: 20px;
+}
+#summary{
+  color: red;
+}
+
+/* This is the skills section */
+/* This contains the transtion */
+.skills > ul > li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 13px;
+    transition: all 0.3s ease;
+}
+
+/* hover effect for the skill section */
+.skills > ul > li:hover{
+    transform: scale(1.05);
+    background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Project showcase section */
+.showcase{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas: 
+     "title title"
+     "subtitle subtitle"
+     "projects projects"
+     "image description"
+     "image description"; 
+    gap:20px; 
+    padding:20px
+}
+
+.showcase > h1{
+    grid-area: title;
+}
+
+.showcase-subtitle{
+    grid-area: subtitle;
+}
+
+.showcase-projects{
+    grid-area: projects;
+}
+
+.showcase-images{
+    grid-area: image;
+    
+    /* This is to help change size to make the image horizontally */
+    display: flex; 
+    flex-direction: row;
+    gap: 15px
+}
+
+.showcase-description {
+    grid-area: description;
+}
+
+/* Footer: contact information */
+  .contact-info{
+    position: relative;
+    left: 5px;
+    top:15px;
+}
+
+/* Resume */
+.resume{
+   background-color: white;
+}
+.button{
+   position: absolute;
+   top: 490px;
+   left: 80px;
+   background-color: rgb(232, 244, 66);
+   padding: 15px;
+   border-radius: 10px;
+   transition: all 0.4s ease;
+}
+.button:hover{
+    font-style: italic;
+    background-color: silver;
+    border-radius: 25px;
+    box-shadow: 0 6px 17px rgba(0, 0, 2, 0.5);
+}
+
+/* This is for the box-shadow */
+/* transiton here  */
+.showcase-images img{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 10px rgba(0, 0, 2, 0.5);
+    transform: scale(0.95);
+    background: linear-gradient(150deg, blue, #0f0);
+    transition: all 0.3s ease;
+    float: left;
+    margin-right: 10px;
+}
+
+.showcase-images img:hover{
+    transform: scale(1.00);
+}
+
+.button{
+    box-shadow: 0 3.5px 10px;
+    opacity: 0.9;
+}
+
+
+ /*  Responsive Design with media queries  */
+
+ /* This would create a mobile device responsive design */
+ @media screen and (max-width:480px){
+        .container{
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "header"
+            "sidebar"
+            "content"
+            "footer";
+        }
+        
+        .header > h1{
+            font-size: 21px;
+        }
+
+        .header h2{
+            font-size: 18px;
+        }
+
+        .sidebar{
+            flex-direction: row; 
+            justify-content: space-around;
+        } 
+        
+        #Introduction{
+            font-size: 12px;
+        }
+
+        .showcase{
+            grid-template-columns: 1fr;
+        }
+        .showcase-images img{
+            width: 100%;
+            height: auto;
+        }
+
+        table{
+            width: 100%;
+        }
+
+        video{
+            width: 100%; 
+            height: auto;
+        }
+        .button{
+            position: relative;
+            bottom: 500px;
+        }
+}
+
+/* This section will contain the tablet device responsive design */
+@media screen and (max-width:768px){
+    .container{
+        grid-template-columns: 180px 1fr;
+    }
+    .showcase{
+        grid-template-columns: 1fr;
+    }
+
+    video{
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+/* This will contain the desktop responsive design */
+
+@media screen and (min-width: 1024px){
+    .container{
+        grid-template-columns: 250px 1fr;
+    }
+}
+
+/* Spinner animation on page load */
+.spinner{
+    width: 60px;
+    height: 55px;
+    border: 10px solid lightblue;
+    border-top: 5px solid #343434;
+    border-radius: 55%;
+    animation: spin 1s linear;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(1deg);
+    }
+    to{
+        transform: rotate(350deg);
+    }
+}
+
+
+
+
+
