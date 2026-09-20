@@ -131,8 +131,8 @@ div {
 }
 .button{
    position: absolute;
-   top: 490px;
-   left: 80px;
+   top: 550px;
+   left: 75px;
    background-color: rgb(232, 244, 66);
    padding: 15px;
    border-radius: 10px;
@@ -260,8 +260,4 @@ div {
         transform: rotate(350deg);
     }
 }
-
-
-
-
 
