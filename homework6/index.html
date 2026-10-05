@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<!-- root element-->
+<html>
+ 
+   <!--head section-->
+     <head>
+       <!--This is displaying the title of the webpage--> 
+       <title>
+          Personal Portfolio using HTML 
+       </title>
+       <!--This is links the html file to the bootstrap website-->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+             integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+             crossorigin="anonymous">
+       <!--This contains javascript from bootstrap to use the features-->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+               integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+               crossorigin="anonymous">
+       </script>
+
+       <!--Google fonts link orbitron-->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+      
+      </head>
+    
+    <body data-bs-spy="scroll"
+          data-bs-target=".navbar"
+          data-bs-smooth-scroll="true"
+          tabindex ="0">
+    <!-- This spinner class creates a loading effect -->
+    <div class="spinner"></div>
+    <!--div tag is used to help create the grid of the webpage-->
+    <div class="page-container">
+    
+      <!--This section of html is showing the future plans-->
+      <!--Bootstrap version-->
+      <div class="header bg-primary bg-gradient">
+          <div class ="container">
+             <div class="row">
+                <div class="col text-center">
+                      <h1 class="display-4">Eaonnes Douros</h1>
+                      <h2 class="h3"> My Aspirations in the Future</h2>
+                      <h3 class="h5">IT professional or cybersecurity professional </h3>
+                 </div>
+              </div>
+          </div>
+       </div>
+   <!--This section is part of the navigation part-->
+   <!--Bootstrap version-->         
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navigation</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav flex-column">
+        <a class="nav-link active" aria-current="page" href="#introduction">Introduction</a>
+        <a class="nav-link" href="#skills">Skills Section</a>
+        <a class="nav-link" href="#showcase">Project Showcase</a>
+        <a class="nav-link" href="#education">Education and Experience</a>
+        <a class="nav-link" href="#resume_info">Download Resume</a>
+        <a class="nav-link" href="#footer">Contact Information</a>
+      </div>
+    </div>
+  </div>
+</nav>
+       
+    <!--This section of html is going over my introduction of myself-->
+    <!--Bootstrap version-->
+      <div class="content">
+        <div class="container">
+            <div class="row">
+               <div class="col mb-5" id="introduction">
+                 <h1 class="h2"> Introduction Paragraph </h1>
+                  <p class="lead">
+                   Hello my name is Eaonnes Douros, I also go by JT. I have not worked in IT yet, and  
+                   I am not currently in any position that requires IT. My interests in the IT field 
+                   is wanting to gain experience that will allow me to work in healthcare or explore 
+                   other job opportunities that may open up in the future. 
+                 </p>
+           <video controls>
+           <source src="./Multmedia-Hyperlinks/Introduction (2).mp4" type="video/mp4">
+           <source src="./Multmedia-Hyperlinks/Introduction (2).mov" type="video/mov">
+           <source src="./Multmedia-Hyperlinks/Introduction (2).webm" type="video/webm">
+           Your browser does not support the video tag.
+           </video>
+               </div>
+            </div>
+          <!--This will contain the bootstrap components for skills-->
+          <div class="row">
+          <div class="col mb-5" id="skills">
+           <h1 class="h2">Skills Section</h1>
+             <h3>Description:</h3>
+             <p>
+           I have some experience with using programming languages, and I want to continue 
+           developing my technical skills while learning more about IT related topics.
+            </p>
+        <!--This is contains nested list of techinal skills-->
+        <!--This has the boostrap cards here-->
+          <!--this part is for the python skill section-->
+           <div class="card shadow" style="width: 18rem;">
+             <div class="card-body">
+               <h5 class="card-title">Python</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">What I have learned from python</h6>
+                 <p class="card-text">Software/tools: Visual Studio Code<br />
+                  Framework: Tkinter<br />
+                  Python libraries: object-oriented programming (OOP)
+                 </p>
+              </div>
+             </div>
+               <!--this part is for the MySQL skill section-->
+           <div class="card shadow" style="width: 18rem;">
+             <div class="card-body">
+               <h5 class="card-title">MySQL</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">What I have learned from MySQL</h6>
+                 <p class="card-text">Software/tools: MySQL Workbench, and MySQL shell<br />
+                  MySQL Concepts: SQL queries, primary keys and foreign keys, and databases
+                 </p>
+              
+              </div>
+             </div>
+           </div>
+         </div>
+       <!--This is is for the Project showcase with bootstrap components-->
+       <div class="row">
+         <div class="col mb-5" id="showcase">
+          <h1 class="h2">Projects Showcase</h1>
+        <!--css link for subtitle-->
+        <div class="showcase-subtitle">
+          <h3>Python and MySQL Projects:</h3>
+       </div>
+        <!--This is showing the projects that I have done in previous courses-->
+        <!--CSS link to projects done-->
+        <div class="showcase-projects">
+         
+          <div class="project-name project-features">
+              <h3>Text-based game</h3>
+          </div>
+          
+          <div class="project-name">
+             <h3>Snake-game</h3>
+          </div>
+          
+          <div class="project-name">
+             <h3>Bikeshop</h3>
+          </div>
+        </div>
+         <!--Text base game image-->
+        <div class="card shadow" style="width: 18rem;">
+           <img src="./Multmedia-Hyperlinks/Text base game.png" 
+                 class="card-img-top" alt="Text base game">
+            <div class="card-body">
+             <h5 class="card-title">Text-base game</h5>
+              <p class="card-text">For my first project in Python, I worked with two other team members to create 
+                   a text-based game where the player makes choices that affect the story.</p> 
+                   <button type="button" class="btn btn-secondary"
+                           data-bs-toggle="modal" 
+                           data-bs-target="#gameModal">
+                           View Details
+                   </button>   
+            </div>
+         </div>
+        <div class="card shadow" style="width: 18rem;">
+           <img src="./Multmedia-Hyperlinks/Bikeshop Project .png" 
+                 class="card-img-top" alt="Bikeshop Project">
+            <div class="card-body">
+             <h5 class="card-title">Bikeshop Project</h5>
+              <p class="card-text">for my MySQL project, I created a database from scratch, uploaded data into the 
+                  tables, and saved a backup in case the original became corrupted or needed updates. </p>    
+           </div>
+         </div>
+       
+          </div>
+        </div>
+        <!--This is for the education and experience sections-->
+        <!--bootstrap components -->
+       <div class="row">
+         <div class="col mb-5" id="education">
+          <h1 class="h2">Education and Experience</h1>
+        <h3>Description:</h3>
+          <div id="summary">
+           <p>
+              For my education and academics, I have a public health degree from NAU. For my work 
+              experience, I worked at NAU EHS for about a year as an intern, where I helped the team 
+              prevent workplace and occupational issues.    
+              <br />
+  
+              Example: An EHS task would be to check whether a department followed regulations, such as 
+              having personal protective equipment (PPE). If they did, the EHS team would check it off and
+              here is an example,
+              <del>
+                (PPE).
+              </del>  
+           </p>
+          </div>
+        </div>
+         <!--This contains the table organizing the education and work experience-->
+         <table class="table table-striped table-hover">
+          <!--Table head-->
+          <thead class="table-dark">
+             <tr>
+               <th>Degree</th>
+               <th>Institution </th>
+               <th>Work Experience</th>
+               <th>Duration</th>
+            </tr>
+          </thead>
+          <!--Table body-->
+          <tbody>
+            <tr>
+                <td rowspan="2">Public health</td>
+                <td rowspan="2">Northern Arizona University </td>
+                <td>Environmental Health and Safety </td>
+                <td rowspan="2">1 year</td>
+            </tr>
+            <!--This will attach with the first table under work experience-->
+            <tr>
+                <td>Internship collaborating with various specialists</td>
+            </tr>
+          </tbody> 
+         </table>
+         </div>
+        <!--This is the resume section-->
+        <!--This has the boostrap extension-->
+        <div class="row">
+          <div class="col mb-5" id="resume_info">
+            <!--This contains a bootstrap component-->
+            <h1 class="h2">Resume</h1>
+                <a class="btn btn-primary btn-lg" 
+                   href="https://drive.google.com/file/d/1ky3-z5my80KfcJhQ8ptuan4sWIycV13s/view?usp=sharing" 
+                   role="button">
+                    Download Resume
+                </a>
+          </div>
+      </div>
+     </div> 
+      <!--This is the footer section-->
+        <!--Bootstrap extension here-->
+        <div class="footer bg-dark bg-gradient text-white">
+         <div class="container">
+          <div class="row">
+           <div class="col mb-5" id="footer">
+           <!--Contact information section-->
+           <!--This contains a CSS element-->
+          <div class="contact-info">
+            <h1 class="h2">Contact Information</h1>
+            <h2>Best ways to reach me</h2>
+            <p>
+               <mark>Email: test@gmail.com</mark> <br />
+               <mark>Message through canvas portal</mark>
+            </p>
+            <!--This contains the hyperlinks for the contact information-->
+          <h5>Links to contact information</h5>
+            <p>
+             <a href="mailto: test@gmail.com">
+               test@gmail.com
+             </a> 
+           <br />
+             <a href="callto: 0001112222">
+               phone: 000111222
+             </a>
+           <br />
+             <a href="https://github.com/ED-programmer/cs212" target="_blank"> 
+                github.com/ED-programmer
+             </a>
+           </p>
+         </div>
+             <p>
+             <small>
+               [Continuing to update the page] 
+             </small>
+             </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <!--Bootstrap modal-->
+         <div class="modal fade"
+              id="gameModal"
+              tabindex="-1">
+
+           <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">
+                    Text-Based Game
+                  </h5>
+                  <button type="button" 
+                          class="btn-close" 
+                          data-bs-dismiss="modal">
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                     This projected was created with two other teammates using the python 
+                     programming language
+                  </p>
+                  <p>
+                    When the player starts in the game they would make different choices 
+                    through interacting with NPCS and fighting bandits. 
+                  </p>
+                  <h3>
+                    Skills required:
+                  </h3>
+                  <ol>
+                     <li>Python programming</li>
+                     <li>use of Object-Oriented Programming</li>
+                     <li>Delegate certain responsibilites to other members</li>
+                     <li>Write up the documentation on what we did in the project</li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                   <button type="button"
+                           class="btn btn-secondary"
+                           data-bs-dismiss="modal">
+                           Close
+                   </button>
+                </div>
+              </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </body>
+  </html>
