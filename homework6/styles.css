@@ -1,0 +1,405 @@
+/*This is creating the grid of the webpage.*/
+.page-container{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 190px 1fr 100px;
+    grid-template-areas: 
+    "header header"
+    "navbar content"
+    "footer footer";
+    
+
+}
+/*This is styling the webpage*/
+.page-container div{ 
+       border: 2px solid black;
+       padding: 5px;
+       color: black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*This contains the four sections*/
+/* 
+   The code in the header create a sticky interface 
+   to follow along with the user
+*/
+.header{
+    grid-area: header;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; 
+    z-index: 100;
+    background-color: white;
+    
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* This will help spread out the navigation side parts */
+.navbar{
+  grid-area: navbar;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar > h1{
+    text-align: center;
+}
+
+.navbar > ul{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+
+   min-height: 300px;
+   padding: 0;
+   margin: 0;
+}
+.navbar > ul > li{
+    flex-grow: 1;
+    list-style: none; 
+    width: 100%;
+    text-align: center;
+}
+
+/*updating this section with the homework5  */
+.content{
+    grid-area: content;
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    padding: 20px;
+    gap: 20px;
+    margin-top: 170px;
+    margin-bottom: 250px;
+}
+
+/* This is for the font for the entire body of the webpage */
+body{
+       font-family: 'Roboto', sans-serif;
+}
+
+/* This section is part will go over the updated 
+   footer css*/
+
+.footer{
+    grid-area: footer;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-shrink: 0;
+    padding: 5px;
+}
+
+/*This will contain the other sections - introduction, skills, and etc*/
+/* This is a fix for the video */
+video{
+    width: 100%;
+    max-width: auto;
+    height: block;
+}
+
+/* This is the education_experience section */
+.education_experience{
+    font-size: 15px;
+    margin: 10px;
+    color: black;
+    padding: 20px;
+    
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+#summary{
+  color: red;
+}
+
+/* This is the skills section */
+
+.skills{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/* Grid layout of the skills sections */
+.skills > ul{
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 0;
+}
+
+/* This contains the transtion */
+ .skills > ul > li{
+    list-style: none;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;    
+    transition: all 0.3s ease;
+ }
+
+.skill-specific{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/* hover effect for the skill section */
+.skills > ul > li:hover{
+    transform: scale(1.05);
+    background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Project showcase section */
+.showcase{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+     "title title"
+     "subtitle subtitle"
+     "projects projects"
+     "image description"
+     "image description"; 
+    
+    gap:20px; 
+    padding:20px;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.showcase > h1{
+    grid-area: title;
+}
+
+.showcase-subtitle{
+    grid-area: subtitle;
+}
+
+.showcase-projects{
+    grid-area: projects;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.project-name{
+    padding:10px;
+    border: 1px solid black;
+}
+
+.project-features{
+    grid-column: span 2;
+   
+}
+
+.showcase-images{
+    grid-area: image;
+    
+    /* This is to help change size to make the image horizontally */
+    display: flex; 
+    flex-direction: row;
+    gap: 15px;
+}
+
+.showcase-description {
+    grid-area: description;
+}
+
+/* Footer: contact information */
+  .contact-info h1{
+    font-size: 18px;
+}
+  .contact-info h2{
+    font-size: 13px;
+  }
+
+/* Resume */
+.resume{
+   background-color: white;
+   flex-grow: 1;
+   flex-shrink: 1;
+}
+.button{
+   position: absolute;
+   top: 850px;
+   left: 75px;
+   background-color: rgb(232, 244, 66);
+   padding: 15px;
+   border-radius: 10px;
+   transition: all 0.4s ease;
+}
+.button:hover{
+    font-style: italic;
+    background-color: silver;
+    border-radius: 25px;
+    box-shadow: 0 6px 17px rgba(0, 0, 2, 0.5);
+}
+
+/* This is for the box-shadow */
+/* transiton here  */
+.showcase-images img{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 10px rgba(0, 0, 2, 0.5);
+    transform: scale(0.95);
+    background: linear-gradient(150deg, blue, #0f0);
+    transition: all 0.3s ease;
+    float: left;
+    margin-right: 10px;
+}
+
+.showcase-images img:hover{
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.button{
+    box-shadow: 0 3.5px 10px;
+    opacity: 0.9;
+}
+
+ /*  Responsive Design with media queries  */
+
+ /* This would create a mobile device responsive design */
+ @media screen and (max-width:480px){
+        .container{
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "header"
+            "navbar"
+            "content"
+            "footer";
+        }
+        
+        .header > h1{
+            font-size: 21px;
+        }
+
+        .header h2{
+            font-size: 18px;
+        }
+        
+        .content{
+            flex-wrap: nowrap;
+        }
+
+        .navbar{
+            flex-direction: column; 
+            justify-content: space-around;
+        } 
+
+        .navbar > h1{
+            font-size: 28px;
+            flex-direction: column;
+        }
+
+        .navbar a{
+            font-size: 18px;
+        }
+        
+        #Introduction{
+            font-size: 12px;
+        }
+
+        .showcase{
+            grid-template-columns: 1fr;
+        }
+        
+        .showcase-images{
+            flex-direction: column;
+        }
+         
+        .showcase-images img{
+            width: 100%;
+            height: auto;
+        }
+    
+        table{
+            width: 100%;
+        }
+
+        video{
+            max-width: 100%;
+            height: auto;
+        }
+
+        .resume{
+            width: 150px;
+        }
+
+        .contact-info{
+            font-size: 85%;
+        }
+
+        .button{
+            position: static;
+        }
+}
+
+/* This section will contain the tablet device responsive design */
+@media screen and (max-width:768px){
+    .container{
+        grid-template-columns: 150px 1fr;
+    }
+    .showcase{
+        grid-template-columns: 1fr;
+    }
+    video{
+        width: 100%; 
+        height: auto; 
+    }
+
+    .resume{
+        top: 50px;
+    }
+    .button{
+        left: 20px ;
+    }
+}
+
+/* This will contain the desktop responsive design */
+
+@media screen and (min-width: 1024px){
+    .container{
+        grid-template-columns: 250px 1fr;
+    }
+}
+
+/* Spinner animation on page load */
+.spinner{
+    width: 60px;
+    height: 55px;
+    border: 10px solid lightblue;
+    border-top: 5px solid #343434;
+    border-radius: 55%;
+    animation: spin 1s linear;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(1deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
