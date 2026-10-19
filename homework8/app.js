@@ -287,7 +287,7 @@ const experienceDate = [
 const experienceTable = document.createElement("table");
 
 // create the hover effect for the head of the table
-experienceTable.className = "table table-striped table hover";
+experienceTable.className = "table table-striped table-hover";
 
 // this will create the table rows for the head of the table
 experienceTable.innerHTML = 
