@@ -346,7 +346,7 @@ const projects = [
 
         deadline: "2026-12-20",
 
-        imageURL: "./Multmedia-Hyperlinks/Text base game.png",
+        imageURL: "Text base game.png",
     },
 
 
@@ -357,7 +357,7 @@ const projects = [
 
         deadline: "2027-01-23",
 
-        imageURL: "./Multmedia-Hyperlinks/Bikeshop Project .png",
+        imageURL: "Bikeshop Project .png",
 
     },
 
