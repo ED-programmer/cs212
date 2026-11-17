@@ -1,0 +1,121 @@
+ /* CSS for the expense tracker to style the webpage*/
+
+ /* This section is going to change the overall appearance on the webpage */
+ body {
+    background-color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+ }
+
+/* Container is going to stylize the page content */
+ .container {
+   width: 80%;
+   margin: auto;
+ }
+
+/* Styles the title of the page */ 
+ .header {
+    padding: 20px;
+    color:black;
+ }
+
+/* This also styles the title of the page */ 
+ header h1 {
+   text-align: center;
+   font-family: "Orbitron", sans-serif;
+   color: black;
+ }
+
+/* Nav element is going to stylize the navigation section */
+ nav{
+   background-color: white;
+   padding: 10px;
+ }
+
+/* This is going to remove the bullet points from the navigation items */
+ nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0; 
+
+   display: flex;
+   gap: 20px
+ }
+/* Nav a styles the links from the html/javascript files */
+ nav a {
+   text-decoration: none;
+   color: black;
+ }
+
+ /* This styles the cards in the expense history */
+ .card{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 9px;
+    padding: 16px; 
+    margin-bottom: 20px;
+ }
+
+ /* This particular section is going to provide spacing for the labels */
+label {
+   display: block;
+   margin-top: 15px;
+}
+
+/* Styles the text input */
+input {
+   width: 100%;
+   padding: 8px;
+   margin-top: 6px;
+}
+
+/* This is going to style the text area for notes */
+textarea {
+   width: 100%;
+   padding: 8px;
+   margin-top: 6px;
+}
+
+/* Styles the button and keep the button a blue until hovered over */
+button {
+   margin-top: 15px;
+   padding: 10px 15px; 
+
+   border: none;
+
+   background-color: blue;
+   color: white; 
+
+   cursor: pointer; 
+}
+
+/* This will style the button when hovered over into a darkblue */
+button:hover {
+   background-color: darkblue;
+}
+
+/* Styles the form controls */
+.form-control {
+   width: 100%;
+   padding: 8px; 
+   margin-top: 5px; 
+}
+
+/* This is a button class that will used thorughout the application */
+.btn {
+   padding: 10px 15px; 
+   border: none;
+   cursor: pointer;
+}
+
+/* this will style the edit button in the expense history */
+.btn-warning{
+   background-color: orange;
+   color: white;
+}
+
+/* This will style the delete button in the expense history */
+.btn-danger {
+   background-color: red;
+   color: cadetblue;
+}
