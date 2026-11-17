@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Expense Tracker
+        </title>
+
+       <!--CSS file here-->
+       <link rel="stylesheet" href="styleSheet.CSS">
+
+       <!--Google fonts link orbitron-->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    </head>
+
+    <!--This section will contain tags for the homepage-->
+    <body>
+     <!--title of the expense tracker-->
+      <header id="Homepage">
+          <h1>Expense Tracker</h1>
+      </header>
+   <!--This section is part of the navigation part-->
+   <nav>
+      <ul id="navMenu">
+
+      </ul>
+   </nav>
+  <!--Put expense logging form right here-->
+  <section id="Add_expense">
+    <div class="card">
+      <h2>Add Expense</h2>
+        <form id="expenseForm">
+          <label for="amount">
+            Amount
+          </label>
+
+          <input
+            type="number"
+            id="amount"
+            placeholder="Enter amount"
+            required>
+
+          <label for="category">
+            Category
+          </label>
+
+          <select id="category">
+            <option>Food</option>
+            <option>Transportation</option>
+            <option>Entertainment</option>
+            <option>Utilities</option>
+            <option>Shopping</option>
+            <option>Other</option>
+          </select>
+
+          <label for="date">
+            Date
+          </label>
+
+          <input
+            type="date"
+            id="date"
+            required>
+
+          <label for="notes">
+            Notes
+          </label>
+
+          <textarea id="notes"></textarea>
+          <button type="submit">
+            Add Expense
+          </button>
+
+        </form>
+
+    </div>
+
+  </section>
+
+  <!--Expense history page-->
+  <section id="Expense_history">
+    <h2>Expense History</h2>
+    
+    <!--This is tag/attribute will contain all of the javascript later -->
+    <div id="expenseHistory">
+
+    </div>
+    
+  </section>
+  <script src="app.js"></script> 
+    </body>
+</html>
